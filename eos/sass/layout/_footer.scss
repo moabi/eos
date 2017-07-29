@@ -1,0 +1,18 @@
+body #footer_left a { margin:0 30px 0 0; color: #ccc;float: left  }
+body #footer_right a {float: right; color: #ccc !important;}
+#footer_left {float: left; width: 400px;}
+#colophon { clear:both; border-top:1px solid #4a4a4a; padding:10px 0 70px; width: 1000px;   background: url(img/px-filet_gris.png) repeat-x 0 0;     display: block;   float: left;     margin: 30px 0 20px 0;}
+#footer_left { width:50%; float:left; }
+.social{
+  text-align: center;
+}
+#footer_left .socialLinks{
+  margin: 0 10px 0 0;
+  display: inline-block;
+  clear: none;
+  float: left;
+}
+#footer_left a { color:#999999; margin:0 4px; }
+#footer_right { float:right; }
+#footer_right a { color:#999999; float:right; }
+#supplementary { border-top:1px solid #ddd; padding:1.625em 7.6%; overflow:hidden; }

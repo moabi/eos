@@ -1,0 +1,261 @@
+/* Media Queries
+----------------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+  #main {
+    clear: both;
+    padding: 0 2%;
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+    position: relative
+  }
+  #secondary {
+    float: left;
+    width: 255px;
+    margin: 0;
+    position: absolute;
+    left: -260px;
+    top: -120px;
+    padding: 0
+  }
+  #secondary.active {
+    float: left;
+    width: 255px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: -120px;
+    padding: 0;
+    background: #343434;
+    z-index: 999;
+    height: 100vh;
+    box-shadow: 2px 6px 8px #000;
+    min-height: 620px
+  }
+  #primary {
+    float: left;
+    margin: 10px 0 50px;
+    width: 100%;
+    position: relative;
+    display: block;
+    clear: both;
+    font-size: 14px
+  }
+  #primary p {
+    font-size: 14px
+  }
+  #access {
+    display: block;
+    float: right;
+    width: 68%;
+    margin: 14px 2% 0 0;
+    background: url(img/px-filet_gris.png) repeat-x 0 100%;
+    height: 46px
+  }
+  #branding {
+    padding: 20px 0 0;
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    width: 100%
+  }
+  #branding hgroup {
+    width: 30%;
+    float: left;
+    display: block;
+    overflow: hidden
+  }
+  #colophon {
+    clear: both;
+    border-top: 1px solid #4a4a4a;
+    padding: 10px 2% 70px;
+    width: 96%;
+    background: url(img/px-filet_gris.png) repeat-x 0 0;
+    display: block;
+    float: left;
+    margin: 30px 0 20px
+  }
+  #content {
+    margin: 0;
+    width: 100%;
+    text-align: center
+  }
+  body.tax-categorie.archive article.eos_themes_posts {
+    float: none;
+    width: 184px;
+    height: 180px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 2%;
+    display: inline-block;
+    transition: all .4s ease;
+    text-align: left
+  }
+  #branding img {
+    height: auto;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    width: 100%;
+    margin: auto;
+    min-width: 190px;
+    max-width: 320px
+  }
+  #page #hamburger:hover {
+    color: #FF6500
+  }
+  #page #hamburger {
+    display: block;
+    color: #fff;
+    line-height: 22px;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif, Arial;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 12px 0 0;
+    width: 85px;
+    cursor: pointer;
+    height: 22px
+  }
+  #hamburger span.line {
+    width: 24px;
+    height: 1px;
+    display: block;
+    background: #fff;
+    margin: 0 0 7px;
+    box-shadow: 1px 1px 1px #FF6500
+  }
+  #hamburger .ham-ico {
+    float: right
+  }
+  #access .menu-main_menu-container {
+    float: right;
+    display: block
+  }
+  #actubox li.actu_single {
+    float: left;
+    width: 305px;
+    margin: 0 30px 0 0;
+    overflow: hidden
+  }
+  #page div.wpcf7 {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 5%;
+    background: #444;
+    clear: left;
+    float: left;
+    width: 90%
+  }
+  #mapp {
+    float: left;
+    padding: 5px;
+    color: #222;
+    border: 1px solid #777
+  }
+  .singular .hentry {
+    width: 100%
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #bloc-info {
+    display: block;
+    float: left;
+    background: url(img/bloc-descriptif.png) no-repeat;
+    width: 100%;
+    height: 140px;
+    font-family: 'Open Sans', sans-serif, Arial;
+    margin: 20px 0 0
+  }
+  .ref_menu {
+    clear: both;
+    display: block
+  }
+  #secondary .homeMenuCom {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 10px 0 15px;
+    display: block
+  }
+  #secondary .homeMenuCom ul {
+    margin: 0 auto;
+    float: left;
+    clear: both;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none
+  }
+  #secondary .homeMenuCom ul ul {
+    margin: 0;
+    padding: 0
+  }
+  #secondary .homeMenuCom ul ul li {
+    padding: 0;
+    background: none
+  }
+  #secondary .homeMenuCom ul li {
+    float: left;
+    clear: both;
+    margin: 8px 0 0;
+    width: 100%;
+    padding: 0
+  }
+  #secondary .homeMenuCom ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: 'Open Sans', sans-serif, Arial;
+    padding-left: 15px;
+    display: block;
+    line-height: 30px;
+    background: rgba(0, 0, 0, 0.21)
+  }
+  #actubox li.actu_single.numb2 {
+    margin: auto
+  }
+  #actubox li.actu_single {
+    float: none;
+    width: 100%;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    max-width: 300px
+  }
+  #actubox li.actu_single img {
+    width: 96%;
+    display: block;
+    margin: auto
+  }
+  body.tax-categorie.archive article.eos_themes_posts, body.tax-categorie.archive article.eos_themes_posts.nomargin {
+    width: 140px;
+    margin: 0
+  }
+  body.tax-categorie.archive article.eos_themes_posts .entry-title a {
+    font-size: 12px
+  }
+  #page #hamburger {
+    float: right
+  }
+  #access .menu {
+    display: none
+  }
+  #branding hgroup {
+    width: 50%;
+    float: left;
+    display: block;
+    overflow: visible
+  }
+  #access {
+    display: block;
+    float: right;
+    width: 44%;
+    margin: 14px 15px 0 0;
+    background: none;
+    height: 46px
+  }
+}
