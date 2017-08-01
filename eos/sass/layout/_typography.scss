@@ -127,3 +127,24 @@ sup {
 sub {
   top: .5ex;
 }
+
+/*Title square*/
+h1.entry-title span#square {
+  display: block;
+  width: 17px;
+  height: 17px;
+  float: left;
+  margin: 0 10px 0 0;
+  background: url(img/srpite-square.png) no-repeat;
+}
+
+/* Links */
+a {
+  color: #ff6000;
+  text-decoration: none;
+}
+
+a:focus, a:active, a:hover {
+  text-decoration: underline;
+  color: #ededed;
+}

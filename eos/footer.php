@@ -66,4 +66,4 @@ endif;
 </body>
 </html>
 
-<link href="http://fonts.googleapis.com/css?family=Open Sans&subset=latin" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open Sans&subset=latin" rel="stylesheet" type="text/css">

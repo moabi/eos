@@ -1,0 +1,92 @@
+/*MENU REFERENCES
+
+theme numero 1: # 006233  # 333c38
+theme numero 2: # 55be47  # 3b4539
+theme numero 3: # 008579  # 33403e
+theme numero 4: # a5d9ec  # 43484a
+theme numero 5: # 8348b5  # 3f3a44
+theme numero 6: # c70bac  # 463443
+theme numero 7: # db0c41  # 483439
+theme numero 8: # fae600  # 4b4933
+theme numero 9: # 9b542b  # 423b37
+*/
+.menuref {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menuref li {
+  line-height: 29px;
+  background: #333c38;
+  padding: 0;
+  margin: 18px 0 20px;
+  width: 225px;
+}
+
+.menuref li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10pt;
+  font-family: 'Open Sans', sans-serif, Arial;
+  padding-left: 15px;
+  display: block;
+  line-height: 30px;
+}
+
+li#menu-item-29, li.sm1 {
+  background: #333c38;
+  border-left: 30px solid #006233;
+}
+
+li#menu-item-35, li.sm2 {
+  background: #3b4539;
+  border-left: 30px solid #55be47;
+}
+
+li#menu-item-36, li.sm3 {
+  background: #33403e;
+  border-left: 30px solid #008579;
+}
+
+li#menu-item-37, li.sm4 {
+  background: #43484a;
+  border-left: 30px solid #a5d9ec;
+}
+
+li#menu-item-38, li.sm5 {
+  background: #3f3a44;
+  border-left: 30px solid #8348b5;
+}
+
+li#menu-item-39, li.sm6 {
+  background: #463443;
+  border-left: 30px solid #c70bac;
+}
+
+li#menu-item-40, li.sm7 {
+  background: #483439;
+  border-left: 30px solid #db0c41;
+}
+
+li#menu-item-41, li.sm8 {
+  background: #4b4933;
+  border-left: 30px solid #fae600;
+}
+
+li#menu-item-34, li.sm9 {
+  background: #423b37;
+  border-left: 30px solid #9b542b;
+}
+
+.menuref li:hover a {
+  color: #FF6000;
+}
+
+.menuref li.current-menu-item a {
+  color: #FF6000;
+}
+
+a.currentCatName {
+  background: url(img/arig.png) no-repeat 100% 50%;
+}

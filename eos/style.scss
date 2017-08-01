@@ -2,7 +2,7 @@
 Theme Name: EOS
 Author: LD
 Author URI: http://little-dream.fr/
-Version: 5.0
+Version: 5.2
 Text Domain: eos
 */
 @import "sass/utils/normalize",
@@ -11,7 +11,10 @@ Text Domain: eos
         "sass/layout/forms",
         "sass/components/map",
         "sass/layout/main",
+        "sass/layout/menu",
         "sass/layout/header",
         "sass/layout/footer",
+        "sass/layout/sidebar",
+        "sass/pages/contact",
         "sass/layout/mediaqueries";
 

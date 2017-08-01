@@ -1,0 +1,52 @@
+/*contact*/
+
+.page-template-page-contact #contact_content h2 {
+  color: #fff;
+  font-size: 18px;
+  margin: 55px 0 2px;
+}
+
+.page-template-page-contact #contact_content h2:nth-child(1) {
+  margin: 0 0 2px;
+}
+
+.page-template-page-contact #contact_content a {
+  color: rgba(251, 95, 0, 0.73);
+}
+
+#contact_content {
+  float: left;
+  width: 240px;
+  margin: 0 40px 20px 0;
+  clear: left;
+  display: block;
+}
+
+#page div.wpcf7 {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background: #444;
+  clear: left;
+  float: left;
+  width: 622px
+}
+
+.wpcf7-form-control.wpcf7-submit {
+  float: right;
+  border: none;
+  background: #CCC;
+  color: black;
+  cursor: pointer;
+  padding: 4px 42px;
+}
+
+.wpcf7-form-control.wpcf7-submit:hover {
+  color: #ededed;
+  background: #bbb;
+}
+
+div.wpcf7 textarea {
+  height: 140px;
+  display: block;
+}

@@ -1,46 +1,171 @@
 /*slider*/
-#primary .royalSlider {display: block; float: none;clear: both;margin: 0 auto 30px;width: 100%;height: 650px;}
-.rs-description{bottom: 0px;z-index: 9;position: absolute;width: 96%;text-align: left;padding: 0 2%;background: rgba(0, 0, 0, 0.49);font-size: 15px;   font-style: italic;   font-family: 'Open Sans', sans-serif,Arial;   color: #838383;   width: 100%;margin: 0;}
+#primary .royalSlider {
+  display: block;
+  float: none;
+  clear: both;
+  margin: 0 auto 30px;
+  width: 100%;
+  height: 650px;
+}
+
+.rs-description {
+  bottom: 0;
+  z-index: 9;
+  position: absolute;
+  text-align: left;
+  padding: 4px 2%;
+  background: rgba(0, 0, 0, 0.49);
+  font-size: 15px;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif, Arial;
+  color: #fafafa;
+  width: 100%;
+  margin: 0;
+}
+
 #primary .rsDefault .rsThumb.rsNavSelected {
   background: rgba(255, 97, 0, 0.53);
 }
-body.home .royalSlider {margin: 0 0 20px;}
-.entry-content.index {margin: 0 0 20px;}
-#primary .royalSlider .arrow {display: block; background: url(img/arr.png) no-repeat;height: 35px; width: 25px;}
-#primary .royalSlider .disabled {display: none !important;}
-#primary .royalSlider .rsArrow{width:25px;}
-#primary .royalSlider .rsArrow.rsArrowLeft {background-position: 0 -72px;left: 0}
-#primary .royalSlider .rsArrow.rsArrowRight { background-position: 0 0;right: 0;}
-#primary .royalSlider .rsArrow.rsArrowLeft:hover {background-position: 0 -108px;}
-#primary .royalSlider .rsArrow.rsArrowRight:hover { background-position: 0 -36px;}
-.royalSlider .thumbsAndArrowsContainer {padding: 10px 0;overflow: hidden;}
-.royalSlider .royalControlNavOverflow.royalThumbs {padding: 0 10px;}
+
+body.home .royalSlider {
+  margin: 0 0 20px;
+}
+
+.entry-content.index {
+  margin: 0 0 20px;
+}
+
+#primary .royalSlider .arrow {
+  display: block;
+  background: url(img/arr.png) no-repeat;
+  height: 35px;
+  width: 25px;
+}
+
+#primary .royalSlider .disabled {
+  display: none !important;
+}
+
+#primary .royalSlider .rsArrow {
+  width: 25px;
+}
+
+#primary .royalSlider .rsArrow.rsArrowLeft {
+  background-position: 0 -72px;
+  left: 0
+}
+
+#primary .royalSlider .rsArrow.rsArrowRight {
+  background-position: 0 0;
+  right: 0;
+}
+
+#primary .royalSlider .rsArrow.rsArrowLeft:hover {
+  background-position: 0 -108px;
+}
+
+#primary .royalSlider .rsArrow.rsArrowRight:hover {
+  background-position: 0 -36px;
+}
+
+.royalSlider .thumbsAndArrowsContainer {
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.royalSlider .royalControlNavOverflow.royalThumbs {
+  padding: 0 10px;
+}
 
 /*SLIDER PROJECT*/
-body.single #primary .royalSlider .rsArrow .rsArrowIcn{ background: url(img/arrows_project.png) no-repeat;height: 35px; width: 25px;}
+body.single #primary .royalSlider .rsArrow .rsArrowIcn {
+  background: url(img/arrows_project.png) no-repeat;
+  height: 35px;
+  width: 25px;
+}
 
-body.single #primary .royalSlider .rsArrow.rsArrowLeft:hover .rsArrowIcn,body.single #primary .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{background-position: -26px -314px; height: 34px;margin-left: -12px;}
-body.single #primary .royalSlider .rsArrow.rsArrowRight:hover .rsArrowIcn,body.single #primary .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{background-position: 1px -314px;margin-left: -12px;}
+body.single #primary .royalSlider .rsArrow.rsArrowLeft:hover .rsArrowIcn, body.single #primary .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -314px;
+  height: 34px;
+  margin-left: -12px;
+}
 
+body.single #primary .royalSlider .rsArrow.rsArrowRight:hover .rsArrowIcn, body.single #primary .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -314px;
+  margin-left: -12px;
+}
 
-body.single div#bijouterie .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn { background-position: -26px 0; }
-body.single div#bijouterie .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px 0; }
-body.single div#maisons-et-appartements .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -25px -34px; }
-body.single div#maisons-et-appartements .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px -34px; }
-body.single div#maroquinerie .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -26px -69px; }
-body.single div#maroquinerie .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px -69px; }
-body.single div#optique .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -26px -104px; }
-body.single div#optique .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px -104px; }
-body.single div#parfumerie-et-institut .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -26px -139px; ;}
-body.single div#parfumerie-et-institut .royalSlider .rsArrow.rsArrowRight .rsArrowIcn { background-position: 1px -139px; }
-body.single div#pharmacie .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -26px -174px; }
-body.single div#pharmacie .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px -174px; }
-body.single div#pret-a-porter .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -26px -209px; }
-body.single div#pret-a-porter .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px -209px; }
-body.single div#restaurant-metiers-de-bouche .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{background-position: -26px -244px; }
-body.single div#restaurant-metiers-de-bouche .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{background-position: 1px -244px; }
-body.single div#autres .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn{ background-position: -26px -279px; }
-body.single div#autres .royalSlider .rsArrow.rsArrowRight .rsArrowIcn{ background-position: 1px -279px; }
+body.single div#bijouterie .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px 0;
+}
+
+body.single div#bijouterie .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px 0;
+}
+
+body.single div#maisons-et-appartements .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -25px -34px;
+}
+
+body.single div#maisons-et-appartements .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -34px;
+}
+
+body.single div#maroquinerie .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -69px;
+}
+
+body.single div#maroquinerie .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -69px;
+}
+
+body.single div#optique .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -104px;
+}
+
+body.single div#optique .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -104px;
+}
+
+body.single div#parfumerie-et-institut .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -139px;;
+}
+
+body.single div#parfumerie-et-institut .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -139px;
+}
+
+body.single div#pharmacie .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -174px;
+}
+
+body.single div#pharmacie .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -174px;
+}
+
+body.single div#pret-a-porter .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -209px;
+}
+
+body.single div#pret-a-porter .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -209px;
+}
+
+body.single div#restaurant-metiers-de-bouche .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -244px;
+}
+
+body.single div#restaurant-metiers-de-bouche .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -244px;
+}
+
+body.single div#autres .royalSlider .rsArrow.rsArrowLeft .rsArrowIcn {
+  background-position: -26px -279px;
+}
+
+body.single div#autres .royalSlider .rsArrow.rsArrowRight .rsArrowIcn {
+  background-position: 1px -279px;
+}
 
 .royalSlider {
   width: 100%;

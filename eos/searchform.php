@@ -9,7 +9,7 @@
 ?>
 	<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 
-<input type="text" class="field" value="" placeholder="<?php _e('Search for', 'eos'); ?>"  name="s" id="s">		
+<input type="text" class="field" value="" placeholder="<?php _e('Recherche', 'eos'); ?>"  name="s" id="s">
 	
-		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php _e('Search for', 'eos'); ?>" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="<?php _e('Recherche', 'eos'); ?>" />
 	</form>

@@ -449,8 +449,8 @@ function twentyeleven_content_nav( $nav_id ) {
 	if ( $wp_query->max_num_pages > 1 ) : ?>
 		<nav id="<?php echo $nav_id; ?>">
 			
-			<div class="nav-previous"><?php next_posts_link( __( ' Next page', 'twentyeleven' ) ); ?></div>
-			<div class="nav-next"><?php previous_posts_link( __( 'Previous page', 'twentyeleven' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( 'page suivante', 'twentyeleven' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'page précédente', 'twentyeleven' ) ); ?></div>
 		</nav><!-- #nav-above -->
 	<?php endif;
 }
