@@ -160,7 +160,8 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 if ( function_exists( 'register_nav_menus' ) ) {
 	register_nav_menus(
 		array(
-			'ref_menu' => 'Références'
+			'ref_menu' => 'Références',
+			'footer_menu' => 'Footer'
 		)
 	);
 }

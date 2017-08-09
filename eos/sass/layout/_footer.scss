@@ -1,17 +1,31 @@
 #colophon {
   clear: both;
-  border-top: 1px solid #4a4a4a;
   padding: 10px 0 70px;
   width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.34);;
+  border-top: 1px solid rgba(255,255,255,0.34);
   display: block;
-  float: left;
-  margin: 30px 0 20px 0;
+  float: none;
+  margin: 4em auto;
+  max-width: 96%;
   #footer_left {
     width: 92%;
     float: none;
     margin: 0 auto;
     padding: 0;
+    .menu{
+      float: left;
+      width: 100%;
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+          display: inline-block;
+          float: none;
+          margin: 0 1%;
+        }
+      }
+    }
     a {
       float: left;
       color: #999999;
@@ -21,7 +35,7 @@
       text-align: center;
       margin: 0 0 0 4%;
       display: block;
-      float: left;
+      float: right;
       .socialLinks {
         margin: 0 10px 0 0;
         display: inline-block;

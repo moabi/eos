@@ -133,19 +133,8 @@ body.archive.category .entry-title {
   width: 100%
 }
 
-/*Category*/
-body.tax-categorie.archive article.eos_themes_posts {
-  float: left;
-  width: 184px;
-  height: 180px;
-  overflow: hidden;
-  padding: 0;
-  margin: 0 45px 0 0;
-}
 
-body.tax-categorie.archive article.eos_themes_posts.nomargin {
-  margin-right: 0;
-}
+
 
 .nothumb {
   display: block;
@@ -385,9 +374,7 @@ body, input, textarea {
   position: relative;
 }
 
-body.archive .hentry, body.archive .no-results {
-  background: url(img/px-filet_gris.png) repeat-x 0 100%;
-}
+
 
 .hentry:last-child, .no-results {
   border-bottom: none;
