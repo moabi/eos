@@ -39,7 +39,8 @@ class eos_themes_posts {
 			'menu_position'       => 5,
 			'capability_type'     => 'post',
 			'hierarchical'        => true,
-			'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
+			'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt','tag' ),
+	  'taxonomies'            => array( 'post_tag' ),
 			'has_archive'         => true,
 			'rewrite'             => array( 'slug' => 'references', 'with_front' => 'theme' ),
 			'query_var'           => true,
@@ -211,7 +212,9 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 	acf_add_options_page();
 }
 
-
+/**
+ * gather images from ACF fields
+ */
 function new_eos_slider() {
 
 	$images = get_field( 'slider' );
@@ -220,8 +223,7 @@ function new_eos_slider() {
       <div id="eosSlider" class="royalSlider rsDefault">
 		  <?php foreach ( $images as $image ): ?>
             <div>
-              <img class="rsImg" data-rsTmb="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"
-                   src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+              <img class="rsImg" data-rsTmb="<?php echo $image['url']; ?>" src="<?php echo $image['url']; ?>" alt="<?php echo get_bloginfo('name'); ?><?php echo $image['alt']; ?>"/>
               <p class="rs-description"><?php echo $image['description']; ?></p>
             </div>
 
@@ -230,7 +232,11 @@ function new_eos_slider() {
 	<?php endif;
 }
 
-
+/**
+ * Eosslider from royalslider
+ * a quick trick to get the old sliders
+ * @param $sliderID
+ */
 function get_royalslider( $sliderID ) {
 	global $wpdb;
 	$table   = $wpdb->prefix . 'royalsliders';
@@ -246,3 +252,5 @@ function get_royalslider( $sliderID ) {
 
 	}
 }
+
+add_theme_support( 'title-tag' );

@@ -11,39 +11,43 @@
 }
 
 .page-template-page-contact #contact_content a {
-  color: rgba(251, 95, 0, 0.73);
+  color: $activeColor1;
 }
 
 #contact_content {
   float: left;
-  width: 240px;
-  margin: 0 40px 20px 0;
-  clear: left;
-  display: block;
+  width: 92%;
+  padding: 0 1em 0 0;
 }
 
 #page div.wpcf7 {
   display: block;
-  margin: 10px auto;
-  padding: 10px;
-  background: #444;
+  margin: 0;
   clear: left;
   float: left;
-  width: 622px
+  width: 100%;
 }
 
 .wpcf7-form-control.wpcf7-submit {
   float: right;
   border: none;
-  background: #CCC;
-  color: black;
+  background: $activeColor;
   cursor: pointer;
-  padding: 4px 42px;
+  padding: 0;
+  color: #fff;
+  width: 80%;
+  margin: 4% 4% 0 0;
+  line-height: 45px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  max-width: 320px;
 }
 
 .wpcf7-form-control.wpcf7-submit:hover {
   color: #ededed;
-  background: #bbb;
+  background: #000;
 }
 
 div.wpcf7 textarea {

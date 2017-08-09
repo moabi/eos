@@ -1,0 +1,172 @@
+
+
+/*taxonomy*/
+body.term-bijouterie #primary a {
+  color: #027b41;
+}
+
+body.term-maisons-et-appartements #primary a {
+  color: #55be47;
+}
+
+body.term-maroquinerie #primary a {
+  color: #008579;
+}
+
+body.term-optique #primary a, body.term-optical #primary a {
+  color: #a5d9ec;
+}
+
+body.term-parfumerie-et-institut #primary a, body.term-pharmacy-beauty #primary a {
+  color: #8348b5;
+}
+
+body.term-pharmacie #primary a {
+  color: #c70bac;
+}
+
+body.term-pret-a-porter #primary a {
+  color: #db0c41;
+}
+
+body.term-restaurant-metiers-de-bouche #primary a {
+  color: #fae600;
+}
+
+body.term-autres #primary a {
+  color: #9b542b;
+}
+
+/*category*/
+#cat-brd {
+  list-style: none;
+  margin: 2px 0 10px;
+  padding: 0;
+}
+
+#cat-brd li a {
+  padding: 1px 10px 1px 2px;
+  text-align: left;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif, Arial;
+}
+
+#main #primary li#bijouterie a {
+  background: #333c38;;
+  color: #fff
+}
+
+#main #primary li#maisons-et-appartements a {
+  background: #3b4539;;
+  color: #fff
+}
+
+#main #primary li#maroquinerie a {
+  background: #33403e;;
+  color: #fff
+}
+
+#main #primary li#optique a {
+  background: #43484a;;
+  color: #fff
+}
+
+#main #primary li#parfumerie-et-institut a {
+  background: #3f3a44;;
+  color: #fff
+}
+
+#main #primary li#pharmacie a {
+  background: #463443;;
+  color: #fff
+}
+
+#main #primary li#pret-a-porter a {
+  background: #483439;;
+  color: #fff
+}
+
+#main #primary li#restaurant-metiers-de-bouche a {
+  background: #4b4933;;
+  color: #fff
+}
+
+#main #primary li#autres a {
+  background: #423b37;;
+  color: #fff
+}
+
+
+
+div#bijouterie h1.entry-title span {
+  background-position: 0 0;
+}
+
+div#maisons-et-appartements h1.entry-title span {
+  background-position: 0 -18px;
+}
+
+div#maroquinerie h1.entry-title span {
+  background-position: 0 -36px;
+}
+
+div#optique h1.entry-title span, div#optical h1.entry-title span {
+  background-position: 0 -54px;
+}
+
+div#parfumerie-et-institut h1.entry-title span {
+  background-position: 0 -72px;
+}
+
+div#pharmacie h1.entry-title span {
+  background-position: 0 -90px;
+}
+
+div#pret-a-porter h1.entry-title span {
+  background-position: 0 -108px;
+}
+
+div#restaurant-metiers-de-bouche h1.entry-title span {
+  background-position: 0 -126px;
+}
+
+div#autres h1.entry-title span {
+  background-position: 0 -144px;
+}
+
+/*liens selon cat*/
+div#bijouterie #primary a {
+  color: #006233;
+}
+
+div#maisons-et-appartements #primary a {
+  color: #55be47;
+}
+
+div#maroquinerie #primary a {
+  color: #008579;
+}
+
+div#optique #primary a {
+  color: #a5d9ec;
+}
+
+div#parfumerie-et-institut #primary a {
+  color: #8348b5;
+}
+
+div#pharmacie #primary a {
+  color: #c70bac;
+}
+
+div#pret-a-porter #primary a {
+  color: #db0c41;
+}
+
+div#restaurant-metiers-de-bouche #primary a {
+  color: #fae600;
+}
+
+div#autres #primary a {
+  color: #9b542b;
+}

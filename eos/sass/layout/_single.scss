@@ -1,0 +1,102 @@
+
+#bloc-info{
+  display: block;
+  float: left;
+  background: #1e1e1e;
+  width: 92%;
+  font-family: $fontFamily;
+  margin: 20px 0 0;
+  padding: 1em;
+  ul {
+    list-style: none;
+    margin: 10px 0 0 25px;
+    padding: 0;
+    li {
+      color: #ccc;
+      text-align: left;
+      span.label {
+        color: #838383;
+      }
+    }
+  }
+}
+
+/* Singular content styles for Posts and Pages */
+.singular .hentry {
+  border-bottom: none;
+  padding: 0;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+.singular.page .hentry {
+  padding: 0;
+  margin: 0;
+}
+
+.singular .entry-title {
+  color: #fff;
+  font-weight: bold;
+  padding: 0 0 15px;
+  width: 100%;
+  float: left;
+  display: block;
+  clear: both;
+}
+
+.singular .entry-title, .singular .entry-header .entry-meta {
+  padding-right: 0;
+}
+
+.singular .entry-header .entry-meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+blockquote.pull {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.6125em;
+  margin: 0 0 1.625em;
+  text-align: center;
+}
+
+.singular blockquote.pull {
+  margin: 0 -22.25% 1.625em;
+}
+
+.pull.alignleft {
+  margin: 0 1.625em 0 0;
+  text-align: right;
+}
+
+.singular .pull.alignleft {
+  margin: 0 1.625em 0 -22.25%;
+}
+
+.pull.alignright {
+  margin: 0 0 0 1.625em;
+  text-align: left;
+}
+
+blockquote.pull.alignleft, blockquote.pull.alignright {
+  width: 33%;
+}
+
+.singular .pull.alignright {
+  margin: 0 -22.25% 0 1.625em;
+}
+
+.singular blockquote.pull.alignleft, .singular blockquote.pull.alignright {
+  width: 33%;
+}
+
+.singular .entry-meta .edit-link a {
+  bottom: auto;
+  left: 50px;
+  position: absolute;
+  right: auto;
+  top: 80px;
+}

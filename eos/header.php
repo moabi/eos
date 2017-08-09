@@ -9,29 +9,45 @@
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>"/>
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?> >
+<?php
+if(is_front_page()):
+    $img_uri =  get_field('home_bg','options');
+	$img_bg = 'background-image:url('.$img_uri.');';
+else:
+    $img_bg = '';
+endif;
+?>
+<body <?php body_class(); ?> style="<?php echo $img_bg; ?>">
 
 <div id="bgcolors">
   <div id="page" class="hfeed">
     <div id="page_gd">
       <header id="branding" role="banner">
-          <div id="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="" rel="home"><img
-                  src="<?php bloginfo( 'template_url' ); ?>/img/logo_wth_halo.png"
-                  alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></a>
-          </div>
-        <nav id="access" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-          <div id="hamburger" class="toggleMenu" data-target="#secondary">
-            Menu
-            <div class="ham-ico">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
+        <div class="pure-g">
+          <div class="pure-u-8-24">
+            <div id="logo">
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="" rel="home">
+                <img src="<?php echo get_field('logo','options'); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
+              </a>
+              <div id="phone">
+          <span>
+            <?php if(get_field('phone_link')){ ?>
+            <a href="<?php echo get_field('phone_link','options'); ?>">
+              <?php } ?>
+              <?php echo get_field('phone','options'); ?>
+              <?php if(get_field('phone_link')){ ?>
+            </a>
+          <?php } ?>
+          </span>
+              </div>
             </div>
           </div>
-        </nav>
-        <!-- #access -->
+          <div class="pure-u-16-24">
+            <nav id="access" role="navigation">
+	            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </nav>
+          </div>
+        </div>
       </header>
       <!-- #branding -->
       <div id="main">

@@ -1,0 +1,61 @@
+body.home{
+  background-position: center center ;
+  background-repeat: no-repeat ;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  height: 100vh;
+  width: 100%;
+  #page{
+    background: none;
+    #page_gd{
+      background: none;
+      h1{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      h2{
+        font-size: 22px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*INDEX ET ACTU*/
+#call {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif, Arial;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+body.home #call {
+  padding-top: 4px;
+}
+
+
+
+#actubox {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  float: left;
+  h2{
+    a {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+#actubox li.actu_single {
+  float: left;
+  width: 305px;
+  margin: 0 30px 0 0;
+  overflow: hidden;
+}

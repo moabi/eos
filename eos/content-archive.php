@@ -7,7 +7,7 @@
  * @since Twenty Eleven 1.0
  */
 ?>
-
+<div class="pure-u-1-2 pure-u-md-1-4 pure-u-lg-1-6">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -34,9 +34,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 	echo "<div class='nothumb'></div>";
 	}
 	?>
-		<?php //my_excerpt(3) ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
-
-
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>

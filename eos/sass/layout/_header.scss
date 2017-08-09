@@ -6,16 +6,37 @@
   padding: 20px 0;
   position: relative;
   z-index: 9999;
-  height: 105px;
-  width: 1000px;
-  img {
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: -60px;
-    width: 459px;
-    margin-left: 36px;
-    margin-top: 10px;
+  height: 115px;
+  width: 100%;
+  max-width: $siteWidth;
+  #logo{
+    position: relative;
+    width: 100%;
+    display: block;
+    max-width: 380px;
+    float: left;
+    height: 145px;
+    #phone{
+      display: block;
+      position: absolute;
+      bottom: 43px;
+      right: -28px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    a{
+      float: left;
+      display: block;
+      img {
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -60px;
+        width: 459px;
+        margin-left: 36px;
+        margin-top: 10px;
+      }
+    }
   }
 }
 

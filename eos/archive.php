@@ -16,25 +16,28 @@
 get_header(); ?>
 
 
-<?php get_sidebar(); ?>
-		<section id="primary">
+<?php //get_sidebar(); ?>
+		<section id="primary" class="archive-php">
 			<div id="content" role="main">
+        <div class="pure-g">
+	        <?php if ( have_posts() ) : ?>
 
-			<?php if ( have_posts() ) : ?>
+	        <?php while ( have_posts() ) : the_post(); ?>
 
+		        <?php
+		        get_template_part( 'content', 'archive' );
+		        ?>
 
+	        <?php endwhile; ?>
 
+        </div>
 
+<div class="pure-g">
+  <div class="pure-u-1">
+	  <?php twentyeleven_content_nav( 'nav-below' ); ?>
+  </div>
+</div>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php
-						get_template_part( 'content', 'archive' );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 

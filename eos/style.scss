@@ -6,15 +6,21 @@ Version: 5.2
 Text Domain: eos
 */
 @import "sass/utils/normalize",
+        "sass/utils/variables",
         "sass/vendors/royalslider",
+        "sass/vendors/pure-grids",
         "sass/layout/typography",
         "sass/layout/forms",
         "sass/components/map",
         "sass/layout/main",
-        "sass/layout/menu",
+        "sass/layout/single",
+        "sass/layout/taxonomy_colors",
+        "sass/layout/topnav",
+        //"sass/layout/menu",
         "sass/layout/header",
         "sass/layout/footer",
-        "sass/layout/sidebar",
+        "sass/pages/home",
+        "sass/pages/404",
         "sass/pages/contact",
         "sass/layout/mediaqueries";
 

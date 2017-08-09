@@ -25,7 +25,6 @@
 			<div id="footer_left">
 			<a href="<?php echo get_site_url(); ?>/contact"><?php _e('Contact', 'eos'); ?></a> <a href="<?php echo get_site_url(); ?>/mentions-legales"><?php _e('Copyrights', 'eos'); ?></a>
 			<?php
-
 // check if the repeater field has rows of data
 if( have_rows('social_links','options') ):
 	echo '<div class="social">';
@@ -42,8 +41,6 @@ endif;
 ?>
 
 			</div>
-			<div id="footer_right">
-			</div>
 	</footer><!-- #colophon -->
 	<div class="clearfix"></div>
 	</div><!-- #page-gd -->
@@ -52,18 +49,11 @@ endif;
 
 <?php wp_footer(); ?>
 </div><!-- bgcolors -->
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-6747896-33', 'auto');
-    ga('send', 'pageview');
-
-</script>
+<?php if(get_field('google_fonts','options')): ?>
+	<?php echo get_field('js_footer','options'); ?>
+<?php endif; ?>
 </body>
 </html>
-
-<link href="https://fonts.googleapis.com/css?family=Open Sans&subset=latin" rel="stylesheet" type="text/css">
+<?php if(get_field('google_fonts','options')): ?>
+<link href="<?php echo get_field('google_fonts','options'); ?>" rel="stylesheet">
+<?php endif; ?>
