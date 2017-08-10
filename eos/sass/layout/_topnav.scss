@@ -13,125 +13,65 @@
   border-bottom: 1px solid rgba(255,255,255,0.34);
   height: 46px;
   margin: 40px 0 0 0;
+  ul.menu {
+    font-size: 13px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    float: right;
+    li {
+      float: left;
+      position: relative;
+      a {
+        color: #fff;
+        display: block;
+        line-height: 3.333em;
+        padding: 0 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 1em ;
+        transition: all .6s ease;
+      }
+      &:hover{
+        >ul.sub-menu {
+          display: block;
+          background: #000;
+          top: 45px;
+          width: auto;
+          left: 0;
+          right: 0;
+          margin: 1px auto;
+          padding: 0;
+          li{
+          }
+        }
+      }
+      .sub-menu {
+        display: none;
+        position: absolute;
+        z-index: 99999;
+        li{
+          list-style: none;
+          width: 100%;
+          border: 1px solid rgba(255,255,255,0.34);
+          a {
+            color: #fff;
+            display: block;
+            line-height: 3.333em;
+            padding: 0 1em;
+            text-decoration: none;
+            text-transform: none;
+            font-weight: normal;
+            font-size: 14px;
+            margin: 0 1em ;
+          }
+        }
+      }
+    }
+  }
 }
 
-.menu {
-  float: right;
-}
 
-#access ul {
-  font-size: 13px;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
 
-#access li {
-  float: left;
-  position: relative;
-}
-
-#access li.menu-item-language {
-}
-
-#access li.menu-item-language a {
-  margin: 0 0 0 20px;
-}
-
-#access li.menu-contact a {
-  margin: 0 30px 0 65px;
-}
-
-#access li.menu-item-language ul {
-}
-
-#access li.menu-item-language ul li {
-}
-
-#access li.menu-item-language ul li a {
-  background: rgb(54, 54, 54);
-  color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
-  width: 120px;
-}
-
-#access li.menu-item-language ul li a:hover {
-  color: rgb(255, 96, 0);
-}
-
-#access li.menu-item-language a img {
-  position: relative;
-  margin: 0px 8px 0 0;
-  padding: 0;
-  left: inherit;
-  top: inherit;
-  width: auto;
-  min-height: inherit;
-  min-width: inherit;
-}
-
-#access a {
-  color: #fff;
-  display: block;
-  line-height: 3.333em;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif, Arial;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  margin: 0 0 0 65px;
-}
-
-#access ul ul {
-  display: none;
-  float: left;
-  margin: 0;
-  position: absolute;
-  top: 3.333em;
-  left: 0;
-  width: 188px;
-  z-index: 99999;
-}
-
-#access ul ul ul {
-  left: 100%;
-  top: 0;
-}
-
-#access ul ul a {
-  background: #f9f9f9;
-  border-bottom: 1px dotted #ddd;
-  color: #444;
-  font-size: 13px;
-  font-weight: normal;
-  height: auto;
-  line-height: 1.4em;
-  padding: 10px;
-  width: 168px;
-}
-
-#access li:hover > a, #access ul ul :hover > a, #access a:focus {
-}
-
-#access li:hover > a, #access a:focus {
-  cursor: pointer;
-  color: #FF6000;
-  border-bottom: 1px solid #FF6000;
-}
-
-#access ul li:hover > ul {
-  display: block;
-  background: none;
-  top: 45px;
-  width: 120px;
-  left: -48px;
-}
-
-#access .current-menu-item > a, #access .current-menu-ancestor > a, #access .current_page_item > a, #access .current_page_ancestor > a {
-  font-weight: bold;
-}
-
-#page #hamburger {
-  display: none;
-}
