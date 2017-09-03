@@ -257,3 +257,6 @@ function cc_mime_types($mimes) {
 	return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
+
+include dirname( __FILE__ ) . '/inc/acf-options.php';
+include dirname( __FILE__ ) . '/inc/acf-home.php';

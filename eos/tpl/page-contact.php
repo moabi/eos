@@ -9,7 +9,7 @@
  */
 
 get_header(); ?>
-<?php //get_sidebar(); ?>
+
   <div id="primary" class="contact">
     <div id="content" role="main">
 
@@ -25,7 +25,6 @@ get_header(); ?>
   </div><!-- #primary -->
 
   <script type="text/javascript">
-
       function initializeMap() {
           var latlng = new google.maps.LatLng(43.602459, 1.470966);
           var settings = {
@@ -55,7 +54,6 @@ get_header(); ?>
               infowindow.open(map, companyMarker);
           });
       }
-
 
   </script>
   <script type="text/javascript" async defer

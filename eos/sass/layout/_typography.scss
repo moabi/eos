@@ -66,7 +66,6 @@ cite, em, i {
 }
 
 blockquote {
-  font-family: Times, Georgia, "Bitstream Charter", serif;
   font-style: italic;
   font-weight: normal;
   margin: 0 3em;
@@ -129,25 +128,31 @@ sub {
 }
 
 /*Title square*/
-h1.entry-title span#square {
-  display: block;
-  width: 17px;
-  height: 17px;
-  float: left;
-  margin: 0 10px 0 0;
-  background: url(img/srpite-square.png) no-repeat;
-}
-.entry-content h1, .entry-content h2, .comment-content h1, .comment-content h2 {
-  color: #000;
-  font-weight: bold;
-  margin: 0 0 .8125em;
+h1.entry-title {
+  span#square {
+    display: block;
+    width: 17px;
+    height: 17px;
+    float: left;
+    margin: 0 10px 0 0;
+    background: url(img/srpite-square.png) no-repeat;
+  }
 }
 
-.entry-content h3, .comment-content h3 {
-  font-size: 10px;
-  letter-spacing: .1em;
-  line-height: 2.6em;
-  text-transform: uppercase;
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
 }
 
 /* Links */

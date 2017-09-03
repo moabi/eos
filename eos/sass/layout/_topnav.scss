@@ -13,6 +13,7 @@
   border-bottom: 1px solid rgba(255,255,255,0.34);
   height: 46px;
   margin: 40px 0 0 0;
+  position: relative;
   ul.menu {
     font-size: 13px;
     list-style: none;
@@ -22,14 +23,18 @@
     li {
       float: left;
       position: relative;
+      &.pull-left {
+        position: absolute;
+        left: 0;
+      }
       a {
         color: #fff;
         display: block;
-        line-height: 3.333em;
+        line-height: 46px;
         padding: 0 1em;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: normal;
         font-size: 14px;
         margin: 0 1em ;
         transition: all .6s ease;
@@ -37,7 +42,7 @@
       &:hover{
         >ul.sub-menu {
           display: block;
-          background: #000;
+          background: #292929;
           top: 45px;
           width: auto;
           left: 0;
@@ -55,7 +60,7 @@
         li{
           list-style: none;
           width: 100%;
-          border: 1px solid rgba(255,255,255,0.34);
+          border: 1px solid rgba(255, 255, 255, 0.22);
           a {
             color: #fff;
             display: block;
@@ -69,6 +74,63 @@
           }
         }
       }
+    }
+
+  }
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1280px) {
+  #access {
+    ul.menu {
+      li {
+        &.pull-left {
+          position: relative;
+          left: inherit;
+        }
+        a {
+          padding-left: 0;
+          padding-right: 0;
+          font-size: 12px;
+        }
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #access {
+    display: none;
+  }
+  #mobile-menu {
+    display: block;
+    background: url(img/menu.png);
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    width: 148px;
+    height: 48px;
+    float: right;
+    margin: 30px 0 0;
+    text-indent: 40px;
+    line-height: 48px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  #mobile-menu {
+    float: right;
+    width: 48px;
+    margin-top: 40px;
+    span {
+      display: none;
     }
   }
 }

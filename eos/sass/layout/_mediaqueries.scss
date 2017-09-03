@@ -10,29 +10,6 @@
     display: block;
     position: relative
   }
-  #secondary {
-    float: left;
-    width: 255px;
-    margin: 0;
-    position: absolute;
-    left: -260px;
-    top: -120px;
-    padding: 0;
-    &.active {
-      float: left;
-      width: 255px;
-      margin: 0;
-      position: absolute;
-      left: 0;
-      top: -120px;
-      padding: 0;
-      background: #343434;
-      z-index: 999;
-      height: 100vh;
-      box-shadow: 2px 6px 8px #000;
-      min-height: 620px
-    }
-  }
 
   #primary {
     float: left;
@@ -48,15 +25,18 @@
   }
 
   #branding {
-    padding: 20px 0 0;
     position: relative;
     z-index: 2;
     height: 100px;
     width: 100%;
+    margin: 0 0 2em;
     #logo {
-      width: 30%;
+      width: 300px;
       float: left;
       display: block;
+      #phone {
+        bottom: 55px;
+      }
     }
   }
 
@@ -103,9 +83,7 @@
     margin: 0 30px 0 0;
     overflow: hidden
   }
-  .singular .hentry {
-    width: 100%
-  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -113,56 +91,13 @@
     display: block;
     float: left;
     background: url(img/bloc-descriptif.png) no-repeat;
-    width: 100%;
-    height: 140px;
-    font-family: 'Open Sans', sans-serif, Arial;
     margin: 20px 0 0
   }
   .ref_menu {
     clear: both;
     display: block
   }
-  #secondary .homeMenuCom {
-    clear: both;
-    float: left;
-    width: 100%;
-    padding: 10px 0 15px;
-    display: block
-  }
-  #secondary .homeMenuCom ul {
-    margin: 0 auto;
-    float: left;
-    clear: both;
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none
-  }
-  #secondary .homeMenuCom ul ul {
-    margin: 0;
-    padding: 0
-  }
-  #secondary .homeMenuCom ul ul li {
-    padding: 0;
-    background: none
-  }
-  #secondary .homeMenuCom ul li {
-    float: left;
-    clear: both;
-    margin: 8px 0 0;
-    width: 100%;
-    padding: 0
-  }
-  #secondary .homeMenuCom ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 10pt;
-    font-family: 'Open Sans', sans-serif, Arial;
-    padding-left: 15px;
-    display: block;
-    line-height: 30px;
-    background: rgba(0, 0, 0, 0.21)
-  }
+
   #actubox li.actu_single.numb2 {
     margin: auto
   }
@@ -188,5 +123,13 @@
   #logo{
     float: left;
     width: 200px;
+
+  }
+}
+
+@media screen and (max-width: 585px) {
+  #phone {
+    bottom: inherit;
+    top: 10px;
   }
 }

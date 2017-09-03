@@ -19,7 +19,7 @@
           <div class="pure-u-1 pure-u-md-1-2">
 	          <?php
             wp_nav_menu(
-	              array( 'theme_location' => 'footer' )
+	            array( 'theme_location' => 'footer_menu' )
             ); ?>
           </div>
           <div class="pure-u-1 pure-u-md-1-2">

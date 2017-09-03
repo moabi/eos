@@ -4,12 +4,11 @@
   float: left;
   background: #1e1e1e;
   width: 92%;
-  font-family: $fontFamily;
   margin: 20px 0 0;
   padding: 1em;
   ul {
     list-style: none;
-    margin: 10px 0 0 25px;
+    margin: 0;
     padding: 0;
     li {
       color: #ccc;
@@ -22,29 +21,23 @@
 }
 
 /* Singular content styles for Posts and Pages */
-.singular .hentry {
-  border-bottom: none;
-  padding: 0;
-  position: relative;
-  text-align: left;
-  width: 100%;
+.singular {
+  .hentry {
+    border-bottom: none;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+  }
+  .entry-title {
+    color: #fff;
+    padding: 0 0 15px;
+    width: 100%;
+    float: left;
+    display: block;
+    clear: both;
+  }
 }
-
-
-.singular .entry-title {
-  color: #fff;
-  font-weight: bold;
-  padding: 0 0 15px;
-  width: 100%;
-  float: left;
-  display: block;
-  clear: both;
-}
-
-.singular .entry-title, .singular .entry-header .entry-meta {
-  padding-right: 0;
-}
-
 .singular .entry-header .entry-meta {
   position: absolute;
   top: 0;
@@ -95,4 +88,60 @@ blockquote.pull.alignleft, blockquote.pull.alignright {
   position: absolute;
   right: auto;
   top: 80px;
+}
+
+/*RELATED */
+.related-post-title {
+  margin: 2em 0 1em;
+  padding-left: 1em;
+}
+
+.card {
+  width: 92%;
+  box-shadow: $boxShadow;
+  display: block;
+  height: 120px;
+  margin: 1em 4%;
+  max-width: 220px;
+  float: left;
+  .card-thumb {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #202020;
+    height: 120px;
+    width: 100%;
+    position: relative;
+
+    span {
+      position: absolute;
+      width: 96%;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.48);
+      bottom: 0;
+      padding: .4em 2%;
+      left: 0;
+    }
+    &.contact-card {
+      background: rgba(30, 30, 30, 0.77);
+      span {
+        font-size: 22px;
+        text-align: center;
+        top: 0;
+        height: 71px;
+        padding: 26px 2%;
+        text-transform: uppercase;
+        color: #f1f1f1;
+        background: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

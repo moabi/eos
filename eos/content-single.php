@@ -16,11 +16,22 @@
 
 <?php 
 $product_terms = wp_get_object_terms($post->ID, 'categorie');
+$tags          = wp_get_post_tags( $post->ID, array( 'order' => 'ASC', 'fields' => 'ids' ) );
+if ( isset( $tags[0] ) ) {
+	$uniqTagId = $tags[0];
+	$tagObj    = get_tag( $uniqTagId );
+	$tagLink   = isset( $tagObj ) ? get_site_url() . '/' . $tagObj->slug : '';
+} else {
+	$tagLink = '';
+}
+
+
 if(!empty($product_terms)){
   if(!is_wp_error( $product_terms )){
     echo '<ul id="cat-brd">';
     foreach($product_terms as $term){
-      echo '<li id="'.htmlspecialchars($term->slug).'"><a href="'.get_term_link($term->slug, 'categorie').'">'.$term->name.'</a></li>'; 
+	    //$hash = get_term_link($term->slug, 'categorie'); //previously retrieve the category page
+	    echo '<li id="' . htmlspecialchars( $term->slug ) . '"><a href="' . $tagLink . '">' . $term->name . '</a></li>';
     }
     echo '</ul>';
   }
@@ -28,10 +39,8 @@ if(!empty($product_terms)){
 
 ?>
 
-
 	<header class="entry-header">
 		<h1 class="entry-title"><span id="square"></span><?php the_title(); ?></h1>
-
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php twentyeleven_posted_on(); ?>

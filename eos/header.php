@@ -8,6 +8,15 @@
   <link rel="profile" href="http://gmpg.org/xfn/11"/>
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>"/>
 	<?php wp_head(); ?>
+  <style>
+    body, p, textarea, input {
+      font-family: <?php echo get_field('body_font','options'); ?>;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: <?php echo get_field('header_font','options'); ?>;
+    }
+  </style>
 </head>
 <?php
 if(is_front_page()):
@@ -24,28 +33,31 @@ endif;
     <div id="page_gd">
       <header id="branding" role="banner">
         <div class="pure-g">
-          <div class="pure-u-8-24">
+          <div class="pure-u-7-24">
             <div id="logo">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="" rel="home">
-                <img src="<?php echo get_field('logo','options'); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
+              <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+                 rel="home">
+                <img src="<?php echo get_field( 'logo', 'options' ); ?>"
+                     alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
               </a>
-              <div id="phone">
-          <span>
-            <?php if(get_field('phone_link')){ ?>
-            <a href="<?php echo get_field('phone_link','options'); ?>">
-              <?php } ?>
-              <?php echo get_field('phone','options'); ?>
-              <?php if(get_field('phone_link')){ ?>
-            </a>
-          <?php } ?>
-          </span>
-              </div>
             </div>
           </div>
-          <div class="pure-u-16-24">
+
+          <div class="pure-u-17-24">
+
             <nav id="access" role="navigation">
-	            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+              <div id="phone">
+                <span>
+                  <?php if ( get_field( 'phone_link', 'options' ) ){ ?>
+                  <a onclick="ga('send', 'event', 'Phone', 'click', 'on site CTA');"
+                     href="tel:<?php echo get_field( 'phone_link', 'options' ); ?>"><?php } ?>
+	                  <?php echo get_field( 'phone', 'options' ); ?>
+	                  <?php if ( get_field( 'phone_link' ) ){ ?></a><?php } ?>
+                </span>
+              </div>
+		        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </nav>
+            <div id="mobile-menu"><span>MENU</span></div>
           </div>
         </div>
       </header>

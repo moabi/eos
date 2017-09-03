@@ -13,28 +13,37 @@
     position: relative;
     width: 100%;
     display: block;
-    max-width: 380px;
     float: left;
-    height: 145px;
-    #phone{
-      display: block;
-      position: absolute;
-      bottom: 43px;
-      right: -28px;
-      font-size: 18px;
-      font-weight: bold;
-    }
+    height: auto;
     a{
       float: left;
       display: block;
+      color: #fff;
+      font-weight: normal;
+      text-shadow: 1px 0 1px rgba(0, 0, 0, 0.27);
       img {
         height: auto;
         position: absolute;
         top: 0;
-        left: -60px;
-        width: 459px;
+        left: 0;
+        width: auto;
         margin-left: 36px;
-        margin-top: 10px;
+        margin-top: 0;
+      }
+    }
+  }
+  #phone {
+    display: block;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    height: 30px;
+    span {
+      a {
+        font-weight: bold;
+        color: #fff;
       }
     }
   }

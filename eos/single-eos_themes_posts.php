@@ -7,7 +7,9 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(); ?>
+get_header();
+global $post;
+?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 <?php 
@@ -49,9 +51,10 @@ $product_terms = wp_get_object_terms($post->ID, 'categorie');
 
 
 				<?php endwhile; // end of the loop. ?>
-			
+<?php get_template_part( 'partials/related', 'posts' ); ?>
 
-			</div><!-- #content -->
+
+  </div><!-- #content -->
 		</div><!-- #primary -->
 </div>
 <?php get_footer(); ?>

@@ -2,7 +2,7 @@
   clear: both;
   padding: 10px 0 70px;
   width: 100%;
-  border-top: 1px solid rgba(255,255,255,0.34);
+  border-top: 1px solid rgba(255, 255, 255, 0.34);
   display: block;
   float: none;
   margin: 4em auto;
@@ -12,19 +12,19 @@
     float: none;
     margin: 0 auto;
     padding: 0;
-    .menu{
+
+    .menu {
       float: left;
       width: 100%;
-      ul{
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        li{
-          display: inline-block;
-          float: none;
-          margin: 0 1%;
-        }
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        float: none;
+        margin: 0 1%;
       }
+
     }
     a {
       float: left;

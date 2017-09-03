@@ -1,0 +1,214 @@
+[
+  {
+    "key": "group_550fd3b13df6e",
+    "title": "Bloc Information du projet",
+    "fields": [
+      {
+        "key": "field_550fd3bc9f451",
+        "label": "localisation",
+        "name": "localisation",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": "",
+        "readonly": 0,
+        "disabled": 0
+      },
+      {
+        "key": "field_550fd3c89f452",
+        "label": "Maître d'ouvrage",
+        "name": "matre_douvrage",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": "",
+        "readonly": 0,
+        "disabled": 0
+      },
+      {
+        "key": "field_550fd3da9f453",
+        "label": "Date de livraison",
+        "name": "date_de_livraison",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": "",
+        "readonly": 0,
+        "disabled": 0
+      },
+      {
+        "key": "field_550fd3ec9f454",
+        "label": "Surface",
+        "name": "surface",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": "",
+        "readonly": 0,
+        "disabled": 0
+      },
+      {
+        "key": "field_550fd3f89f455",
+        "label": "Montant",
+        "name": "montant",
+        "type": "text",
+        "instructions": "",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": "",
+        "readonly": 0,
+        "disabled": 0
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "eos_themes_posts"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+  },
+  {
+    "key": "group_550fd37609dd6",
+    "title": "Slider",
+    "fields": [
+      {
+        "key": "field_550fd37a89a18",
+        "label": "Slider ID",
+        "name": "identifiant_du_slider",
+        "type": "text",
+        "instructions": "Ceci est l'ancien système utilisé, si vous souhaitez mettre un slider, merci de remplir le champs Slider ci-dessous",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "default_value": "",
+        "placeholder": "",
+        "prepend": "",
+        "append": "",
+        "maxlength": "",
+        "readonly": 0,
+        "disabled": 0
+      },
+      {
+        "key": "field_550fd5f529b61",
+        "label": "Slider",
+        "name": "slider",
+        "type": "gallery",
+        "instructions": "Sélectionnez vos images pour réaliser un slider de manière automatique ici.",
+        "required": 0,
+        "conditional_logic": 0,
+        "wrapper": {
+          "width": "",
+          "class": "",
+          "id": ""
+        },
+        "min": "",
+        "max": 10,
+        "preview_size": "thumbnail",
+        "library": "all",
+        "min_width": "",
+        "min_height": "",
+        "min_size": "",
+        "max_width": "",
+        "max_height": "",
+        "max_size": "",
+        "mime_types": "",
+        "insert": "append"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "post"
+        }
+      ],
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "eos_themes_posts"
+        }
+      ],
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "page"
+        }
+      ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": ""
+  }
+]

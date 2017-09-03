@@ -1,37 +1,21 @@
-
 jQuery(function () {
 
-    var $ = jQuery,
-        menu = $('#menu-categories').find('li'),
-        listing = $('body.archive.tax-categorie').find('.eos_themes_posts:nth-child(3n)'),
-        txtmenu = $('#menu-categories li a'),
-        currentcat = $('#cat-brd li a').html(),
-        homep = $('body.home #call'),
-        toggleMenu = $('.toggleMenu');
-    //mobile Menu
-    toggleMenu.click(function (e) {
+    var $ = jQuery;
+
+    $('.js-filter').on('click', function (e) {
         e.preventDefault();
-        var target = $(this).attr('data-target');
-        console.log(target);
-        $(target).toggleClass('active');
-        $('#header-mobile-menu').toggleClass('active');
+        var $target = '#' + $(this).attr('data-filter');
+        $('.js-filter').removeClass('active');
+        $(this).addClass('active');
+        console.log($target);
+        $('#active-term').empty();
+        $($target).clone().removeClass('hidden').appendTo('#active-term');
     });
-    //find the current parent cat
-    txtmenu.each(function () {
-        var txx = $(this).html();
-        if (txx === currentcat) {
-            $(this).addClass('currentCatName');
-        }
-    });
-    //front page, no empty p
-    homep.find('p').each(function () {
-        var $this = $(this);
-        if ($this.html().replace(/\s|&nbsp;/g, '').length === 0) {
-            $this.remove();
-        }
-    });
-    //no margin for the third article
-    listing.addClass('nomargin');
+    //first item
+    $activeTerm = $('.init-term');
+    if ($activeTerm.length) {
+        $activeTerm.clone().removeClass('hidden').appendTo('#active-term');
+    }
 
 
     $("#eosSlider,#blockslider > div > .royalSlider").royalSlider({

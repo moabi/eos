@@ -4,20 +4,28 @@ html {
 
 body {
   padding: 0;
-  background: transparent url(img/bd-head-gradient-2.png) repeat-x 0 0;
+  background: #E2E2E2 url(img/background-2.png) repeat;
+  font-family: $fontFamily;
 }
 
+p, textarea, input {
+  font-family: $fontFamily;
+}
 
 
 #bgcolors {
   z-index: 0;
+  background: transparent url(img/bd-head-gradient-2.png) repeat-x 0 0 !important;
+}
+
+.wpmm-force-bg {
+  background: none;
 }
 
 #page {
   margin: 0 auto;
   max-width: $siteWidth;
   padding: 0;
-  background: #E2E2E2 url(img/background-2.png) repeat;
 }
 .entry-content{
   display: block;
@@ -25,9 +33,6 @@ body {
 }
 .padd{
   padding: 0 1em;
-}
-#page_gd {
-  background: transparent url(img/bd-head-gradient-2.png) repeat-x 0 0;
 }
 
 #branding hgroup {
@@ -113,10 +118,8 @@ body.archive.category .entry-title {
 
 
 #primary.references h1.entry-title {
-  font-family: $fontFamily;
   color: #fff;
   line-height: 17px;
-  font-size: 20px;
   padding: 0 0 35px;
   text-transform: uppercase;
 }
@@ -388,8 +391,6 @@ body, input, textarea {
 
 .entry-title {
   clear: both;
-  color: #fff;
-  font-size: 26px;
   font-weight: bold;
   line-height: 1.5em;
   padding-bottom: .3em;
@@ -403,8 +404,6 @@ body.archive.tax-categorie .entry-title {
 .entry-title, .entry-title a {
   color: #fff;
   text-decoration: none;
-  font-family: $fontFamily;
-  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -420,13 +419,9 @@ body.archive.tax-categorie .entry-title {
 }
 
 .sep, .entry-meta a {
-  font-family: $fontFamily;
   font-size: 10px
 }
 
-#nav-single, #nav-single a {
-  font-family: $fontFamily;
-}
 
 .single-author .entry-meta .by-author {
   display: none;
@@ -434,7 +429,6 @@ body.archive.tax-categorie .entry-title {
 
 
 .entry-content table, .comment-content table {
-  border-bottom: 1px solid #ddd;
   margin: 0 0 1.625em;
   width: 100%;
 }
@@ -449,7 +443,6 @@ body.archive.tax-categorie .entry-title {
 }
 
 .entry-content td, .comment-content td {
-  border-top: 1px solid #ddd;
   padding: 6px 10px 6px 0;
 }
 
@@ -573,7 +566,6 @@ p img, .wp-caption {
 
 .wp-caption .wp-caption-text, .gallery-caption {
   color: #666;
-  font-family: Georgia, serif;
   font-size: 12px;
 }
 
