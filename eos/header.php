@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
+	<?php echo get_field( 'js_header', 'options' ); ?>
   <meta charset="<?php bloginfo( 'charset' ); ?>"/>
   <link id="page_favicon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="icon" type="image/x-icon" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">

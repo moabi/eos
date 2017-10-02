@@ -23,6 +23,7 @@
             ); ?>
           </div>
           <div class="pure-u-1 pure-u-md-1-2">
+	          <?php echo get_field( 'footer_text', 'options' ); ?>
             <?php include dirname(__FILE__).'/partials/socials.php'; ?>
           </div>
         </div>
